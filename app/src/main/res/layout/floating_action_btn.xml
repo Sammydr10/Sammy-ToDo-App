@@ -1,0 +1,17 @@
+<com.getbase.floatingactionbutton.FloatingActionButton
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:fab="http://schemas.android.com/apk/res-auto"
+		android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/md_teal_600"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:elevation="24dp"
+    android:shadowColor="#666666"
+    
+			fab:fab_icon="@drawable/ic_add_white_48dp"			
+            fab:fab_title="Search"
+            fab:fab_colorPressed="@color/md_teal_400"/>
+	

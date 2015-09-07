@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   
+    <item
+        android:id="@+id/menu_yes"
+		android:icon="@drawable/ic_done_all_black_48dp"
+        android:title="YES"/>
+    <item
+		android:icon="@drawable/ic_clear_black_48dp"       
+        android:id="@+id/menu_no"
+        android:title="NO"/>
+    
+</menu>

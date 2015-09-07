@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="80dp"
+	android:background="@color/md_teal_500"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:background="?android:attr/selectableItemBackground"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:elevation="24dp"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="16dp"
+			android:id="@+id/checklisttempLinearLayout1">
+
+			<ImageView
+				android:transitionName="profile"
+				android:id="@+id/hometempImageView1"
+				android:layout_height="48dp"
+				android:layout_width="48dp"
+				android:src="@android:drawable/ic_delete"
+				android:layout_marginRight="16dp"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+                    android:transitionName="title"
+					android:id="@+id/hometempTextView1"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="Medium Text"
+					android:layout_marginBottom="4dp"
+					android:textColor="#EFEFEF"/>
+
+				<TextView
+                    android:transitionName="sdesc"
+					android:id="@+id/hometempTextView2"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Small Text"
+					android:textColor="#D8D8D8"/>
+
+			</LinearLayout>
+
+			<RelativeLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent">
+
+				<ImageView
+					android:shadowColor="#666666"
+					android:gravity="end"
+                    
+					android:background="?android:attr/selectableItemBackground"
+					android:id="@+id/check_list_tempImageView"
+					android:layout_height="match_parent"
+					android:layout_width="36dp"
+					android:src="@drawable/ic_action_navigation_more_vert"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true"
+					android:translationY="-10dp"
+					android:translationZ="10dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Small Text"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true"
+					android:textColor="#E0E0E0"
+					android:id="@+id/checktemp"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include
+		android:id="@+id/maininclude"
+		layout="@layout/floating_action_btn"/>
+
+	<include
+		layout="@layout/tool_bar"
+		android:id="@+id/mainToolbar"/>
+
+	<LinearLayout
+		android:layout_below="@id/mainToolbar"
+		android:background="@color/md_teal_300"
+		android:shadowColor="#666666"
+		android:shadowDy="10"
+		android:id="@+id/mainLinearLayout"
+		android:elevation="4dp"
+		android:layout_height="200dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<ImageView
+			android:transitionName="profile"
+			android:id="@+id/mainImageView"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:src="@drawable/todo"
+			android:scaleType="centerCrop"
+			android:cropToPadding="true"/>
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler"
+		android:layout_below="@id/mainLinearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
